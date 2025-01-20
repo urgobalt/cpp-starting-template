@@ -16,6 +16,8 @@
         shellHook = ''
           export LD_LIBRARY_PATH=${inja}:${clang}/lib
           export ISYSTEM=${clang}/bin/clang++
+          premake5 gmake
+          premake5 ecc
         '';
       });
     });
