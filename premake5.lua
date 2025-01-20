@@ -1,11 +1,14 @@
 ---@diagnostic disable:undefined-global
 
+require("ecc")
+
 -- Workspace settings
 workspace("Hi")
 configurations("Debug", "Release")
 
 -- Project settings
 project("Hi")
+toolset("clang")
 kind("ConsoleApp")
 language("C++")
 cppdialect("C++11")

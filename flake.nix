@@ -14,8 +14,8 @@
       devShells.default = pkgs.mkShell (with pkgs; {
         packages = [clang clang-tools premake5 inja];
         shellHook = ''
-          export CC="${clang}"
-          export LD_LIBRARY_PATH="${inja}"
+          export LD_LIBRARY_PATH=${inja}:${clang}/lib
+          export ISYSTEM=${clang}/bin/clang++
         '';
       });
     });
