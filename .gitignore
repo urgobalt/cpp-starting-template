@@ -1,0 +1,7 @@
+.direnv/
+obj/
+bin/
+
+Makefile
+*.make
+
